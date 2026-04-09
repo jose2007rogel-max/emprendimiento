@@ -1,48 +1,49 @@
 <!DOCTYPE html>
+<!-- Documento HTML principal: define HTML5 y la estructura básica -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página para móviles -->
     <title>Document</title>
+    <!-- Enlace a la hoja de estilos externa -->
     <link rel="stylesheet" href="stilos/stilos.css">
 </head>
 <body>
+    <!-- Barra fija superior con logo y nombre del sitio -->
     <div class="fixed-div">
-        <p>Sofís Sweet Bites</p>
+        <!-- El párrafo dentro del div usa flexbox en CSS para alinear el logo y el texto -->
+        <p>
+            <img class="logo" src="img/coneja1.png" alt="coneja"> <!-- Imagen de la coneja, a la izquierda del texto -->
+            Sofís Sweet Bites <!-- Nombre del sitio, alineado con la imagen -->
+        </p>
     </div>
+
+    <!-- Contenedor para el encabezado principal -->
     <div class="lol">
-        <img src="img/logo.jpeg" alt="logo">
+        <div>
+            <h1>
+                <span class="line1">Dulces caprichos</span>
+                <span class="line2">Suaves como un conejito</span>
+            </h1> <!-- Título grande que describe la página -->
+        </div>
     </div>
-    <h1> Cup Cakes </h1>
-    <br>
-    <h2>¡Bienvenidos a nuestro sitio de Cup Cakes!</h2>    
+
+    <br> <!-- Salto de línea extra para separar secciones -->
+
+    <!-- Subtítulo de bienvenida -->
+    <h2>¡Bienvenidos a nuestro sitio de Cup Cakes!</h2>
+
+    <!-- Párrafo descriptivo sobre los productos -->
     <p>En nuestro sitio encontrarás una deliciosa variedad de Cup Cakes para satisfacer tus antojos dulces. Desde los clásicos sabores de vainilla y chocolate, hasta combinaciones más creativas como red velvet, zanahoria, y oreo. Nuestros Cup Cakes están hechos con ingredientes de alta calidad y decorados con esmero para ofrecerte una experiencia dulce y visualmente atractiva.</p>
-    <br>
-    <img src="img/topinkcs.png" alt="topincks">
-    <ul>
-        <li>Vainilla</li>
-        <li>Chocolate</li>
-        <li>Red Velvet</li>
-        <li>Zanahoria</li>
-        <li>Oreo</li>
-    </ul>
-    <br>
-    <img src="img/ponki.png" alt="blue">
-    <ul>
-        <li>Fresa</li>
-        <li>Limón</li>
-        <li>Frambuesa</li>
-        <li>Maracuyá</li>
-        <li>Piña</li>
-    </ul>
-    <br>   
-    <img src="img/ingredientes.png" alt="green">
-    <ul>
-        <li>Harina</li>
-        <li>Azúcar</li>
-        <li>Huevos</li>
-        <li>Mantequilla</li>
-        <li>Leche</li>  
+
+    <br> <!-- Salto de línea para separar el texto del menú de imágenes -->
+
+    <!-- Menú con imágenes enlazadas -->
+    <ul class="menu"> <!-- Lista desordenada que contiene los elementos del menú -->
+        <li><a href="partes_copcakes/topincks.html"><img class="normal" src="img/topinkcs.png" alt="topincks"></a></li> <!-- Enlace no conectado: la página partes_copcakes/topincks.html no existe -->
+        <li><a href="partes_copcakes/copcakes.html"><img class="normal" src="img/ponki.png" alt="blue"></a></li> <!-- Enlace no conectado: la página partes_copcakes/copcakes.html no existe -->
+        <li><a href="partes_copcakes/ingredientes.html"><img class="normal" src="img/ingredientes.png" alt="green"></a></li> <!-- Enlace no conectado: la página partes_copcakes/ingredientes.html no existe -->
     </ul>
 </body>
 </html>

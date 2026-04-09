@@ -1,50 +1,101 @@
-/* Estilos Universales */
+/* Estilos universales aplicados a todo el documento */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina espacio externo predeterminado de todos los elementos */
+    padding: 0; /* Elimina espacio interno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye borde y padding dentro del ancho y alto definidos */
 }
 
-/* Estilos del body
-RGB: combinación de colores primarios
-R (rojo), G (verde), B (azul)
-Rango: 0 - 255 */
+/* Estilos del body: fuente, imagen de fondo y espaciado general */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #9d21f07c;
-    padding: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Tipografía principal con fuentes de reserva */
+    background-image: url('../img/fondo.jpeg'); /* Imagen de fondo desde la carpeta img */
+    background-size: cover; /* Escala la imagen para cubrir todo el área del body */
+    background-repeat: no-repeat; /* Evita que la imagen se repita en mosaico */
+    background-attachment: fixed; /* La imagen fija en la ventana cuando se hace scroll */
+    padding: 20px; /* Espacio interno alrededor de todo el contenido */
 }
 
-
+/* Estilo del título principal grande */
 h1 {
-    display: table;
-    color: rgb(255, 252, 252);
-    background-color: rgb(191, 45, 228);
-    font-size: 50px;
-    text-align: center;
-    margin: 50px auto;
-    padding: 10px 20px;
-    border-radius: 1cm;
+    display: table; /* Se comporta como una tabla, ajusta su ancho al contenido y permite margin auto */
+    color: rgb(255, 252, 252); /* Color del texto */
+    background-color: rgb(191, 45, 228); /* Fondo morado detrás del título */
+    font-size: 50px; /* Tamaño grande del texto */
+    text-align: center; /* Centra el texto dentro del elemento */
+    margin: 50px auto; /* Agrega espacio arriba y abajo, y centra horizontalmente */
+    padding: 10px 20px; /* Espacio interno alrededor del texto */
+    border-radius: 1cm; /* Bordes redondeados del recuadro */
+    width: 43%; /* Ancho del elemento para que no ocupe toda la pantalla */
 }
 
-img {
+/* Asegura que cada línea dentro del mismo h1 se muestre en bloques separados */
+h1 span {
     display: block;
-    width: 300px;
-    height: 300px;
-    margin: 10px auto;
 }
 
-div.lol{
-    margin: 60px auto 0;
-    text-align: center;
+/* Estilo del texto de la primera línea dentro de h1 */
+h1 .line1 {
+    font-weight: bold;
 }
 
+/* Estilo del texto de la segunda línea dentro de h1 */
+h1 .line2 {
+    font-size: 0.8em;
+}
+
+/* Estilo para imágenes normales en el contenido */
+img.normal {
+    display: block; /* Hace que la imagen ocupe toda la línea y pueda centrarse con margin auto */
+    width: 300px; /* Ancho fijo de la imagen */
+    height: 300px; /* Alto fijo de la imagen */
+    margin: 10px auto; /* Centra la imagen y deja espacio arriba y abajo */
+}
+
+/* Estilo para la imagen de logo de la coneja */
+img.logo {
+    width: 130px; /* Ancho pequeño para que la imagen no sea demasiado grande */
+    height: 130px; /* Alto fijo del logo */
+    display: inline-block; /* Permite que la imagen esté en la misma línea que el texto */
+    margin: 0; /* Quita espacios extra alrededor de la imagen */
+}
+
+/* Contenedor centrado para el encabezado secundario */
+div.lol {
+    margin-top: 150px; /* Agrega espacio desde arriba para separar del encabezado fijo */
+    text-align: center; /* Centra el contenido de texto dentro del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+}
+
+/* Barra fija superior con fondo semitransparente */
 div.fixed-div {
-    position: fixed;
-    z-index: 10;
-    text-align: center;
-    font-size: 40px;
-    top: 4%;
-    width: 97%;
-    background-color: rgba(191, 45, 228, 0.664);
+    font-family: fantasy; /* Fuente especial para el texto del encabezado */
+    position: fixed; /* Fija el elemento en la ventana, no se mueve al hacer scroll */
+    z-index: 10; /* Coloca el encabezado por encima del resto del contenido */
+    text-align: center; /* Centra el texto en el ancho del div */
+    font-size: 40px; /* Tamaño del texto del encabezado */
+    top: 4%; /* Posición desde el borde superior de la ventana */
+    width: 97%; /* Ancho casi completo de la ventana */
+    background-color: rgba(188, 43, 224, 0.76); /* Fondo púrpura semitransparente */
+}
+
+/* Flexbox dentro de la barra fija para alinear texto e imagen */
+div.fixed-div p {
+    display: flex; /* Activa el modelo flex para el párrafo */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del párrafo */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos de la lista de menú de imágenes */
+.menu {
+    list-style-type: none; /* Quita las viñetas de la lista */
+    text-align: right; /* Alinea el contenido de la lista a la derecha */
+}
+
+/* Estilo de cada elemento de la lista del menú */
+.menu li {
+    display: inline-block; /* Cada elemento se coloca uno junto al otro en línea */
+    padding: 15px; /* Espacio interno dentro de cada elemento de menú */
+    margin: 20px; /* Espacio externo entre los elementos */
+    border-radius: 5px; /* Esquinas redondeadas dentro de cada elemento */
 }
